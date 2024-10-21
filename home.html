@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vancleefarpels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="scroll">
+    
+    <nav class="navbar fixed-top navbar-expand-lg " id="mynav">
+        <div class="container d-none d-lg-block">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-lighter" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    SEARCH
+                </a>
+              </li>
+            </ul>
+            <a class="navbar-brand mx-auto fs-1" href="#">Van Cleef & Arpels</a>
+            <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container d-lg-none">
+          <a class="navbar-brand mx-auto fs-1" href="#">Van Cleef & Arpels</a>
+        </div>
+      </nav>
+                                                                                                              
+    <section class="banner position-relative">
+        <div class="container-fluid p-0">
+            <div class="images position-relative">
+                <div class="image image-1 text-center w-100 d-flex justify-content-center align-items-end overflow-hidden">
+                    <img src="./images/girl.avif" alt="" id="img1">
+                </div>
+                <div class="image image-2 text-center position-sticky bottom-0 start-0 w-100 overflow-hidden">
+                    <img src="./images/ring.avif" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section data-aos="fade-up" data-aos-duration="1200">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-md-8">
+                    <div class="text-center">
+                        <h1>LEGEND <br> OF DIAMONDS</h1>
+                        <span>BY VAN CLEEF & ARPELS</span> <br>
+                        <span>WHITE DIAMOND <br> VARIATIONS</span>
+                        <p class="fs-3 mt-4">
+                            Since 1906, diamonds have lit up the Maison's pieces with their sparkle. Today, Van Cleef & Arpels reveals them in all their facets with the High Jewelry second chapter Legend of diamonds - White diamond variations. A homage to the Maison's creative history and the timeless beauty of this precious stone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 neckless">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-5 col-lg-4">
+                    <div class="box" data-aos="fade-up" data-aos-duration="1200">
+                        <img class="w-100 object-fit-cover" style="height: 600px;" src="./images/neckless.avif" alt="">
+                        <p class="text-secondary pt-2">Roaring twenties transformable long necklace. White gold, rose gold, one DIF Type 2A rose-cut pear diamond of 10.32 carats, one DIF rose-cut oval diamond of 4.46 carats, diamonds.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 pt-5">
+                    <div class="box pt-5" data-aos="fade-up" data-aos-duration="1200">
+                        <img class="w-100 object-fit-cover" style="height: 600px;" src="./images/girly.avif" alt="">
+                        <p class="text-secondary pt-2">New haricot clip, Spontini ring and Boogie-woogie bracelet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade" data-aos-duration="800">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-md-8">
+                    <div class="text-center">
+                        <p class="fs-3 mt-4">
+                            Symbols of purity and eternity, diamonds emphasize the precious character of the collection. Chosen in a variety of cuts – round, baguette-cut, marquise-cut, rose-cut and pear-shaped – they have been selected to meet the especially high standards of the Maison's gemmological experts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class=" py-5 neckless">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-5 col-lg-4">
+                    <div class="box" data-aos="fade-up" data-aos-duration="1200">
+                        <img class="w-100 object-fit-cover" style="height: 600px;" src="./images/circa1960.avif" alt="">
+                        <p class="text-secondary pt-2">Roaring twenties transformable long necklace. White gold, rose gold, one DIF Type 2A rose-cut pear diamond of 10.32 carats, one DIF rose-cut oval diamond of 4.46 carats, diamonds.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 pt-5">
+                    <div class="box pt-5" data-aos="fade-up" data-aos-duration="1200">
+                        <img class="w-100 object-fit-cover" style="height: 600px;" src="./images/circa1922.avif" alt="">
+                        <p class="text-secondary pt-2">New haricot clip, Spontini ring and Boogie-woogie bracelet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section data-aos="fade" data-aos-duration="800">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-md-8">
+                    <div class="text-center">
+                        <p class="fs-3 mt-4">
+                            Inspired by the Maison's rich heritage, the White diamond variations collection's pieces retrace its creative history, reinterpreting its distinctive style to reflect different eras and artistic trends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="collection collection1  overflow-hidden py-5">
+        <div class="container">
+            <div class="pattern-image pattern-image1">
+                <img src="./images/pattern.avif" alt="" class="w-100">
+            </div>
+            <p class="text-secondary text-center mt-1">Jérémie Fischer drawing representing a landscape in Lesotho</p>
+            <h1 class="text-center" id="collection1">The Collection</h1>
+        </div>
+    </section>
+
+
+    <section class="tab tab1 d-none d-md-block">
+        <div class="container-fluid h-100">
+            <div class="row main-tab main-tab1 h-100">
+                <div class="col-md-4">
+                    <ul class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 active" id="v-pills-Roaring-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Roaring" type="button" role="tab" aria-controls="v-pills-Roaring" aria-selected="true">Roaring twenties</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Chrysler-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Chrysler" type="button" role="tab" aria-controls="v-pills-Chrysler" aria-selected="false">Chrysler</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Boucle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Boucle" type="button" role="tab" aria-controls="v-pills-Boucle" aria-selected="false">Double Boucle</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Boogie-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Boogie" type="button" role="tab" aria-controls="v-pills-Boogie" aria-selected="false">Boogie-Woogie</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Hollywood-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Hollywood" type="button" role="tab" aria-controls="v-pills-Hollywood" aria-selected="false">Hollywood</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-boule-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boule" type="button" role="tab" aria-controls="v-pills-boule" aria-selected="false">New double boule</li>
+                      </ul>
+                </div>
+                <div class="col-md-8 h-100">
+                    <ul class="tab-content h-100" id="v-pills-tabContent">
+                        <li class="tab-pane fade show active" id="v-pills-Roaring" role="tabpanel" aria-labelledby="v-pills-Roaring-tab" tabindex="0">
+                          <img src="./images/tab1.avif" alt="" class="w-100 h-100 border-1 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Chrysler" role="tabpanel" aria-labelledby="v-pills-Chrysler-tab" tabindex="0">
+                          <img src="./images/tab2.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Boucle" role="tabpanel" aria-labelledby="v-pills-Boucle-tab" tabindex="0">
+                          <img src="./images/tab3.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Boogie" role="tabpanel" aria-labelledby="v-pills-Boogie-tab" tabindex="0">
+                          <img src="./images/tab4.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Hollywood" role="tabpanel" aria-labelledby="v-pills-Hollywood-tab" tabindex="0">
+                          <img src="./images/tab5.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-boule" role="tabpanel" aria-labelledby="v-pills-boule-tab" tabindex="0">
+                          <img src="./images/tab6.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-4 d-md-none" style="max-height: 100vh; height: 600px; margin-bottom: 200px;">
+        <div class="container h-100">
+            <div id="carouselExampleCaptions" class="carousel carousel-1 slide carousel-fade h-100">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <img src="./images/tab1.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Roaring twenties</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab2.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Chrysler</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab3.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Double Boucle</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab4.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Boogie-Woogie</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab5.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Hollywood</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab6.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>New double boule</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <section class="collection overflow-hidden py-5" style="background-color: #f0f0f0;">
+        <div class="container">
+            <div class="pattern-image pattern-image2 py-2">
+                <img src="./images/pattern2.avif" alt="" class="w-100">
+            </div>
+            <p class="text-secondary text-center mt-1">Jérémie Fischer drawing representing Audrey earrings</p>
+        </div>
+    </section>
+
+    <section class="tab tab2 d-none d-md-block">
+        <div class="container-fluid h-100">
+            <div class="row main-tab main-tab2 h-100">
+                <div class="col-md-4">
+                    <ul class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 active" id="v-pills-Roaring-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Roaring" type="button" role="tab" aria-controls="v-pills-Roaring" aria-selected="true">Roaring twenties</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Chrysler-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Chrysler" type="button" role="tab" aria-controls="v-pills-Chrysler" aria-selected="false">Chrysler</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Liz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Liz" type="button" role="tab" aria-controls="v-pills-Liz" aria-selected="false">Dear Liz</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Trainee-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Trainee" type="button" role="tab" aria-controls="v-pills-Trainee" aria-selected="false">Trainée lumineuse</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Diamond-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Diamond" type="button" role="tab" aria-controls="v-pills-Diamond" aria-selected="false">Diamond chandelier</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-diamants-tab" data-bs-toggle="pill" data-bs-target="#v-pills-diamants" type="button" role="tab" aria-controls="v-pills-diamants" aria-selected="false">Boutonnière de diamants</li>
+                      </ul>
+                </div>
+                <div class="col-md-8 h-100">
+                    <ul class="tab-content h-100" id="v-pills-tabContent">
+                        <li class="tab-pane fade show active" id="v-pills-Roaring" role="tabpanel" aria-labelledby="v-pills-Roaring-tab" tabindex="0">
+                          <img src="./images/tab7.avif" alt="" class="w-100 h-100 border-1 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Chrysler" role="tabpanel" aria-labelledby="v-pills-Chrysler-tab" tabindex="0">
+                          <img src="./images/tab8.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Liz" role="tabpanel" aria-labelledby="v-pills-Liz-tab" tabindex="0">
+                          <img src="./images/tab9.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Trainee" role="tabpanel" aria-labelledby="v-pills-Trainee-tab" tabindex="0">
+                          <img src="./images/tab10.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Diamond" role="tabpanel" aria-labelledby="v-pills-Diamond-tab" tabindex="0">
+                          <img src="./images/tab11.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-diamants" role="tabpanel" aria-labelledby="v-pills-diamants-tab" tabindex="0">
+                          <img src="./images/tab12.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-4 d-md-none" style="max-height: 100vh; height: 600px; margin-bottom: 200px;">
+        <div class="container h-100">
+            <div id="carouselExampleCaptions2" class="carousel carousel-1 slide carousel-fade h-100">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <img src="./images/tab7.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Roaring twenties</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab8.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Chrysler</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab9.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Double Boucle</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab10.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Boogie-Woogie</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab11.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Hollywood</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab12.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>New double boule</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <section class="collection overflow-hidden py-5" style="background-color: #f0f0f0;">
+        <div class="container">
+            <div class="pattern-image pattern-image3 py-2">
+                <img src="./images/pattern3.avif" alt="" class="w-100">
+            </div>
+            <p class="text-secondary text-center mt-1">Jérémie Fischer drawing representing Audrey earrings</p>
+        </div>
+    </section>
+
+
+    <section class="tab tab3 d-none d-md-block">
+        <div class="container-fluid h-100">
+            <div class="row main-tab main-tab3 h-100">
+                <div class="col-md-4">
+                    <ul class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 active" id="v-pills-Roaring-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Roaring" type="button" role="tab" aria-controls="v-pills-Roaring" aria-selected="true">Roaring twenties</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Chrysler-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Chrysler" type="button" role="tab" aria-controls="v-pills-Chrysler" aria-selected="false">Chrysler</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Boucle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Boucle" type="button" role="tab" aria-controls="v-pills-Boucle" aria-selected="false">Double Boucle</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Boogie-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Boogie" type="button" role="tab" aria-controls="v-pills-Boogie" aria-selected="false">Boogie-Woogie</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-Hollywood-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Hollywood" type="button" role="tab" aria-controls="v-pills-Hollywood" aria-selected="false">Hollywood</li>
+                        <li class="nav-link bg-transparent fs-2 text-start border-0 " id="v-pills-boule-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boule" type="button" role="tab" aria-controls="v-pills-boule" aria-selected="false">New double boule</li>
+                      </ul>
+                </div>
+                <div class="col-md-8 h-100">
+                    <ul class="tab-content h-100" id="v-pills-tabContent">
+                        <li class="tab-pane fade show active" id="v-pills-Roaring" role="tabpanel" aria-labelledby="v-pills-Roaring-tab" tabindex="0">
+                          <img src="./images/tab1.avif" alt="" class="w-100 h-100 border-1 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Chrysler" role="tabpanel" aria-labelledby="v-pills-Chrysler-tab" tabindex="0">
+                          <img src="./images/tab2.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Boucle" role="tabpanel" aria-labelledby="v-pills-Boucle-tab" tabindex="0">
+                          <img src="./images/tab3.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Boogie" role="tabpanel" aria-labelledby="v-pills-Boogie-tab" tabindex="0">
+                          <img src="./images/tab4.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-Hollywood" role="tabpanel" aria-labelledby="v-pills-Hollywood-tab" tabindex="0">
+                          <img src="./images/tab5.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                        <li class="tab-pane fade" id="v-pills-boule" role="tabpanel" aria-labelledby="v-pills-boule-tab" tabindex="0">
+                          <img src="./images/tab6.avif" alt="" class="w-100 h-100 object-fit-cover">
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-4 d-md-none" style="max-height: 100vh; height: 600px; margin-bottom: 200px;">
+        <div class="container h-100">
+            <div id="carouselExampleCaptions3" class="carousel carousel-1 slide carousel-fade h-100">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <img src="./images/tab3.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Roaring twenties</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab5.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Chrysler</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab8.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Double Boucle</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab10.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Boogie-Woogie</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab12.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Hollywood</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img src="./images/tab2.avif" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption">
+                      <h1>New double boule</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <section class="collection collection2  overflow-hidden py-5">
+        <div class="container">
+            <div class="pattern-image pattern-image4">
+                <img src="./images/pattern.avif" alt="" class="w-100">
+            </div>
+            <p class="text-secondary text-center mt-1">Jérémie Fischer drawing representing a landscape in Lesotho</p>
+            <h1 class="text-center" id="collection2">Putting <br> diamonds in the <br> spotlight</h1>
+        </div>
+    </section>
+
+    <section class="position-relative">
+        <section class="py-5 neckless" style="background-color: #f5f5f5; z-index: 1;">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="box" data-aos="fade-up" data-aos-duration="1200">
+                            <img class="w-100 object-fit-cover" style="height: 600px;" src="./images/neckless.avif" alt="">
+                            <p class="text-secondary pt-2">Roaring twenties transformable long necklace. White gold, rose gold, one DIF Type 2A rose-cut pear diamond of 10.32 carats, one DIF rose-cut oval diamond of 4.46 carats, diamonds.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 pt-5">
+                        <div class="box pt-5" data-aos="fade-up" data-aos-duration="1200">
+                            <img class="w-100 object-fit-cover" style="height: 600px;" src="./images/girly.avif" alt="">
+                            <p class="text-secondary pt-2">New haricot clip, Spontini ring and Boogie-woogie bracelet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="position-sticky bottom-0 start-0 w-100" style="z-index: -1;">
+            <div class="container">
+                <div class="row justify-content-center py-5">
+                    <div class="col-12 col-md-8">
+                        <div class="text-center">
+                            <h1>LEGEND <br> OF DIAMONDS</h1>
+                            <span>BY VAN CLEEF & ARPELS</span> <br>
+                            <span>WHITE DIAMOND <br> VARIATIONS</span>
+                            <p class="fs-3 mt-4">
+                                Since 1906, diamonds have lit up the Maison's pieces with their sparkle. Today, Van Cleef & Arpels reveals them in all their facets with the High Jewelry second chapter Legend of diamonds - White diamond variations. A homage to the Maison's creative history and the timeless beauty of this precious stone.
+                            </p>
+                            <p class="my-5 text-secondary">
+                                Nicolas Bos, President & CEO of Van Cleef & Arpels
+                            </p>
+                            <a href="#" class="text-black text-uppercase py-5 text-secondary" style="letter-spacing: 1px;">Continue the exploration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section>
+            <img src="./images/ring2.avif" alt="" class="w-100">
+            <div class="py-5 my-5"></div>
+    </section>
+
+    <footer class="py-5" style="background-color: #f5f5f5;">
+        <ul class="list-unstyled d-flex gap-4 flex-wrap align-items-center justify-content-center mb-5">
+            <li>
+                INSTAGRAM
+            </li>
+            <li>
+                FACEBOOK
+            </li>
+            <li>
+                YOUTUBE
+            </li>
+            <li>
+                PINTEREST
+            </li>
+            <li>
+                LINKEDIN
+            </li>
+        </ul>
+        <ul class="list-unstyled d-flex gap-4 flex-wrap align-items-center justify-content-center">
+            <li>
+                LEGAL
+            </li>
+            <li>
+                PRIVACY POLICY
+            </li>
+            <li>
+                CONDITIONS OF SALE
+            </li>
+            <li>
+                CSR POLICY
+            </li>
+            <li>
+                © Van Cleef & Arpels 2024
+            </li>
+        </ul>
+    </footer>
+  </div>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    /* height: 100vh; */
+    /* position: relative; */
+}
+
+
+.banner .images .image{
+    height: 100vh;
+}
+.banner .images .image-1{
+    background-color: #ccc;
+    z-index: 2;
+}
+.banner .images .image-1 img{
+    /* width: 35%; */
+    height: 80%;
+    width: 760px;
+    max-width: 90%;
+    object-fit: cover;
+    position: relative;
+    opacity: 1;
+}
+.banner .images .image-2{
+    z-index: -1;
+}
+.banner .images .image-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+    position: relative;
+}
+.banner .images .image-2{
+    background-color: #acacac;
+}
+
+.neckless .box p{
+    font-size: 14px;
+    letter-spacing : 1px;
+}
+
+.collection .pattern-image{
+    max-width: 620px;
+    margin: auto;
+}
+
+.tab{
+    padding-top: 100px;
+    height: 100vh;
+}
+.tab .nav .nav-link{
+    color: #ccc;
+}
+.tab .nav .active{
+    color: black;
+}
+
+.tab-content>.tab-pane {
+    height: 0%;
+    opacity: 0;
+    display: block !important;
+    transition-delay: 25ms;
+    transition: opacity 300ms cubic-bezier(.6,0,.4,1);
+}
+.tab-content>.active {
+    height: 100%;
+    opacity: 1;
+    transition: opacity 300ms cubic-bezier(.6,0,.4,1);
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+.carousel-caption {
+    bottom: -110px;
+    color: black;
+}
+.carousel-indicators {
+    bottom: -120px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
